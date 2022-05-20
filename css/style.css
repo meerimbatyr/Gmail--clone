@@ -1,0 +1,241 @@
+/* Google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #202124;
+}
+
+.container {
+  width: 700px;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 80px;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title-wrapper {
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#logo {
+  width: 130px;
+  margin-left: -30px;
+  margin-bottom: -10px;
+}
+h2 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.inputs {
+  width: 100%;
+}
+.name,
+.passwords {
+  display: flex;
+}
+.name,
+.email-input,
+.passwords {
+  position: relative;
+}
+
+p,
+.error {
+  font-size: 12px;
+}
+p {
+  color: #5f6368;
+  margin-left: 10px;
+}
+.error,
+.failure-icon {
+  color: red;
+  opacity: 0;
+  margin-left: 5px;
+  opacity: 0;
+}
+
+.instruction {
+  opacity: 1;
+}
+
+input {
+  padding: 7px 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+#email {
+  padding-right: 180px;
+}
+.gmail {
+  position: absolute;
+  font-size: 14px;
+  top: 17px;
+  left: 230px;
+}
+#checkbox {
+  transform: scale(1.5);
+  cursor: pointer;
+  margin-left: 7px;
+  margin-top: 20px;
+}
+#checkbox:hover {
+  border: 3px solid black;
+  background-color: #f0f0f0;
+}
+
+label {
+  font-size: 14px;
+}
+
+.signin {
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signin a {
+  font-size: 13px;
+  color: #4688f1;
+  text-decoration: none;
+  align-self: center;
+}
+.signin a:hover {
+  color: #3566b8;
+  background-color: #f0f0f0;
+  padding: 5px 0;
+}
+#next {
+  display: inline-block;
+  background-color: #4688f1;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 7px 23px;
+  cursor: pointer;
+  transform: ease 0.5s;
+}
+#next:hover {
+  background-color: #3566b8;
+}
+.image-wrapper {
+  width: 40%;
+  margin: 120px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#signup-img {
+  width: 100%;
+}
+.signin-text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #2b2c2f;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 400px;
+  }
+  form {
+    width: 90%;
+    align-items: center;
+  }
+  #logo {
+    margin-left: -25px;
+  }
+  .image-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 556px) {
+  .container {
+    width: 85%;
+    border: none;
+    box-shadow: none;
+    margin: 20px auto;
+    padding: 0;
+  }
+  .title-wrapper {
+    margin-bottom: 10px;
+  }
+  form {
+    width: 100%;
+  }
+  form div {
+    display: block;
+  }
+
+  .name,
+  .passwords {
+    flex-direction: column;
+  }
+  input,
+  p {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  p {
+    font-size: 12px;
+  }
+  #logo {
+    margin-left: -25px;
+  }
+  .gmail {
+    left: 70%;
+  }
+  #checkbox {
+    width: auto;
+    margin-right: 10px;
+  }
+
+  #next {
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 300px) {
+  .gmail {
+    left: 65%;
+  }
+  #email {
+    width: 60%;
+    padding-right: 5px;
+  }
+}

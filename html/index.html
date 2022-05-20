@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Gmail Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <div class="title-wrapper">
+          <img
+            src="https://1757140519.rsc.cdn77.org/blog/wp-content/uploads/sites/2/2020/08/google-gif-logo.gif"
+            id="logo"
+            alt="google-logo"
+          />
+          <h2>Create your Google Account</h2>
+          <span class="title">to continue to Gmail</span>
+        </div>
+
+        <div class="inputs">
+          <div class="name">
+            <div>
+              <div>
+                <input type="text" placeholder="First name" id="first-name" />
+              </div>
+              <i class="fas fa-exclamation-circle failure-icon"></i>
+              <span class="error"></span>
+            </div>
+            <div>
+              <div>
+                <input type="text" placeholder="Last name" id="last-name" />
+              </div>
+            </div>
+          </div>
+          <div class="email-input">
+            <div>
+              <input type="text" placeholder="Username" id="email" />
+              <div><span class="gmail">@gmail.com</span></div>
+            </div>
+            <p class="instruction">You can use letters,numbers & periods</p>
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <span class="error"></span>
+          </div>
+          <div class="passwords">
+            <div>
+              <input type="password" placeholder="Password" id="password" />
+            </div>
+            <div>
+              <input type="password" placeholder="Confirm" id="confirm" />
+            </div>
+          </div>
+          <p class="instruction">
+            Use 8 or more characters with a mix of letters, numbers & symbols
+          </p>
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <span class="error"> </span>
+          <div>
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">Show password</label>
+          </div>
+        </div>
+        <div class="signin">
+          <a href="../html/signin.html">Sign in instead</a>
+          <a id="btn-signin" href="signin.html"
+            ><button type="submit" id="next">Next</button></a
+          >
+        </div>
+      </form>
+      <div class="image-wrapper">
+        <img
+          src="https://ssl.gstatic.com/accounts/signup/glif/account.svg"
+          alt="sign-up-gmail"
+          id="signup-img"
+        />
+        <p class="signin-text">
+          One account. All of Google <br />
+          working for you.
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Javascript -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>

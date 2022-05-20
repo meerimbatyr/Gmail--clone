@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../css/gmail.css" rel="stylesheet" type="text/css" />
+    <title>GMAIL CLONE</title>
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <div><img class="header-icon" src="../images/burger-menu.png" /></div>
+        <div>
+          <img
+            class="header-icon lg"
+            src="https://logolook.net/wp-content/uploads/2021/06/Gmail-Logo.svg"
+          />
+        </div>
+        <div>
+          <p>Gmail</p>
+        </div>
+      </div>
+      <div class="middle">
+        <i class="fas fa-search"></i>
+        <input id="search" type="text" placeholder="Search mail" />
+        <i class="fa fa-xmark"></i>
+        <div class="search-list" id="search-list">
+          <!-- list here -->
+          <!-- <div class="search-list-item">
+            <div class="search-item-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="search-item-info">
+              <h5>
+                MessageMessageMessageMessageMessageMessageMessageMessageMessageMessageMessageMessageMessage
+              </h5>
+              <p>Sender name</p>
+            </div>
+          </div> -->
+          <!--  -->
+        </div>
+      </div>
+      <div class="right">
+        <img class="header-icon" src="../images/question-icon.png" />
+        <img class="header-icon" src="../images/settings-icon.png" />
+        <img class="header-icon" src="../images/apps-icon.png" />
+        <img class="header-icon lg" src="../images/user-icon.png" />
+      </div>
+    </header>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="compose">
+          <img
+            src="https://www.gstatic.com/images/icons/material/colored_icons/2x/create_32dp.png"
+          />
+          <span class="left-tag-text">Compose</span>
+        </div>
+        <div class="menu">
+          <div class="inbox left-tag">
+            <img
+              src="https://www.gstatic.com/images/icons/material/system/2x/inbox_black_20dp.png"
+            />
+            <span class="left-tag-text">Inbox</span>
+          </div>
+          <div class="starred left-tag">
+            <img
+              src="https://www.gstatic.com/images/icons/material/system/2x/grade_black_20dp.png"
+            />
+            <span class="left-tag-text">Starred</span>
+          </div>
+          <div class="trash left-tag">
+            <img
+              src="https://www.gstatic.com/images/icons/material/system/2x/delete_black_20dp.png"
+            />
+            <span class="left-tag-text">Trash</span>
+          </div>
+          <div class="spam left-tag">
+            <img
+              src="https://www.gstatic.com/images/icons/material/system/2x/report_black_20dp.png"
+            />
+            <span class="left-tag-text">Spam</span>
+          </div>
+        </div>
+      </aside>
+      <main class="main-content">
+        <div class="page-info">
+          <span class="pageinfo"></span>
+          <button id="prev"><i class="fa fa-chevron-left"></i></button>
+          <button id="next"><i class="fa fa-chevron-right"></i></button>
+        </div>
+        <ul class="email-list">
+          <!-- <li class="email-item">
+                  <input type="checkbox" name ='check-1' id="'1">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-arrow-right"></i>
+                  <span>Cash App</span>
+                  <span class="email-message">A direct debit</span>
+                  <span>9:10am</span>
+              </li> -->
+        </ul>
+      </main>
+      <aside class="aside-right">
+        <div class="aside-right-container">
+          <div class="calendar">
+            <img
+              src="https://www.gstatic.com/companion/icon_assets/calendar_2020q4_2x.png"
+              alt="calendar-icon"
+            />
+          </div>
+          <div class="keep">
+            <img
+              src="https://www.gstatic.com/companion/icon_assets/keep_2020q4v3_2x.png"
+              alt="keep-icon"
+            />
+          </div>
+          <div class="tasks">
+            <img
+              src="https://www.gstatic.com/companion/icon_assets/tasks_2021_2x.png"
+              alt="tasks-icon"
+            />
+          </div>
+          <div class="contacts">
+            <img
+              src="https://www.gstatic.com/companion/icon_assets/contacts_2x.png"
+              alt="contacts-icon"
+            />
+          </div>
+          <div class="add">
+            <img
+              src="https://www.gstatic.com/images/icons/material/system/1x/add_grey600_24dp.png"
+              alt="plus-icon"
+            />
+          </div>
+        </div>
+      </aside>
+      <div class="arrows">
+        <div class="arrow hide"><i class="fas fa-chevron-right"></i></div>
+        <div class="arrow show hidden">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- <aside class="'aside-right">
+    <footer>Gmail Project. All rights reserved</footer> -->
+
+    <script type="module" src="../js/gmail.js"></script>
+  </body>
+</html>
